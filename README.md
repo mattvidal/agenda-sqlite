@@ -4,8 +4,18 @@ Implementação de uma agenda telefônica utilizando a biblioteca SQLite para li
 ## Descrição
 Deve-se criar um programa que implemente uma Agenda de Contatos com as seguintes características:
 
-	Dropwizard- The web framework used
-* Dropwizard- The web framework used
+a) Cada contato deverá armazenar:
+* Nome da pessoa, com até 200 caracteres
+* Números de telefones
+* Números de celulares
+* E-mails
+
+b) O menu deverá oferecer ao usuário as seguintes opções
+* Listar contatos
+* Inserir contato (em ordem alfabética)
+* Remover contato (em um dado índice)
+* Editar contato (inserir/remover telefone, inserir/remover email)
+* Limpar toda a agenda
 
 ## Instalação
 Execute os comandos abaixo no terminal para instalar na família Debian/Ubuntu.
