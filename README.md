@@ -4,7 +4,7 @@ Implementação de uma agenda telefônica utilizando a biblioteca SQLite para li
 ## Descrição
 Deve-se criar um programa que implemente uma Agenda de Contatos com as seguintes características
 
-* Dropwizard- The web framework used
+- Dropwizard- The web framework used
 ** Dropwizard- The web framework used
 
 ## Instalação
