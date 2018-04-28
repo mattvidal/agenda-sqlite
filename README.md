@@ -12,8 +12,8 @@ a) Cada contato deverá armazenar:
 * E-mails.
 
 b) O menu deverá oferecer ao usuário as seguintes opções
-* Listar contatos;
-* Inserir contato (em ordem alfabética);
+* Listar contatos (em ordem alfabética);
+* Inserir contato;
 * Remover contato;
 * Editar contato (inserir/remover telefone, inserir/remover email);
 * Limpar toda a agenda.
