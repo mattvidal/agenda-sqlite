@@ -1,7 +1,7 @@
 # agenda-sqlite
 Implementação de uma agenda telefônica utilizando a biblioteca SQLite para linguagem C
 
-
+## Instalação
 Execute os comandos abaixo no terminal para instalar na família Debian/Ubuntu.
 
 ```sh
