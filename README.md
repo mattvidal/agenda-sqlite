@@ -2,8 +2,10 @@
 Implementação de uma agenda telefônica utilizando a biblioteca SQLite para linguagem C
 
 ## Descrição
+Deve-se criar um programa que implemente uma Agenda de Contatos com as seguintes características
 
-
+* Dropwizard- The web framework used
+** Dropwizard- The web framework used
 
 ## Instalação
 Execute os comandos abaixo no terminal para instalar na família Debian/Ubuntu.
