@@ -1,29 +1,54 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <sqlite3.h>
+#include "interface.h"
+#include "func_bd.h"
 
-#if linux
-#define limpabuffer() __fpurge(stdin)
-#define limpatela() system("clear")
-#define pausa() getchar()
+void main(void)
+{
+    setlocale(LC_ALL, "");
 
-#elif WIN32
-#define limpabuffer() fflush(stdin)
-#define limpatela() system("cls")
-#define pausa() system("pause")
-#endif
+    //declarações de variáveis
+    sqlite3 *db;
+    int rc; // código de retorno
+    sqlite3_stmt *stmt;
+    int op;
 
-int main(int argc, char* argv[]){
-   sqlite3 *db;
-   char *zErrMsg = 0;
-   int rc;
-   rc = sqlite3_open("test.db", &db);
-   if( rc ){
-      fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
-      exit(0);
-   }else{
-      fprintf(stderr, "Opened database successfully\n");
-   }
-   sqlite3_close(db);
+    rc = sqlite3_open("agenda.db", &db);
+
+    erroBancoDeDados(rc, db);
+
+    criaTabelas(rc, db, stmt);
+
+    while(1)
+    {
+        op = menu();
+
+        switch (op)
+        {
+            case 1 :
+                listarContatos(db);
+            break;
+
+            case 2 :
+                inserirContato(db);
+            break;
+
+            case 3 :
+                //removerContato();
+            break;
+
+            case 4 :
+                //editarContato();
+            break;
+
+            case 5 :
+                //limparAgenda();
+            break;
+
+            case 6 :
+                exit(0);
+            break;
+        }
+    }
+
+    sqlite3_close(db);
 
 }
