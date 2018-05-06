@@ -20,10 +20,8 @@ b) O menu deverá oferecer ao usuário as seguintes opções
 Execute os comandos abaixo no terminal para instalar na família Debian/Ubuntu.
 
 ```sh
-# apt-get install sqlite3
-# apt-get install libsqlite3-dev
+# apt-get install sqlite3 libsqlite3-dev
 ```
-
 Para visualizar cada arquivo, ou melhor, cada banco de dados, você poderá instalar o aplicativo sqlitebrowser:
 
 ```sh
