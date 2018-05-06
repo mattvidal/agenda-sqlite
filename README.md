@@ -6,9 +6,7 @@ Deve-se criar um programa que implemente uma Agenda de Contatos com as seguintes
 
 a) Cada contato deverá armazenar:
 * Nome da pessoa, com até 200 caracteres;
-* Data de nascimento;
 * Números de telefones;
-* Números de celulares;
 * E-mails.
 
 b) O menu deverá oferecer ao usuário as seguintes opções
