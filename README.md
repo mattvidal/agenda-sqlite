@@ -17,7 +17,7 @@ b) O menu deverá oferecer ao usuário as seguintes opções
 * Limpar toda a agenda.
 
 ## Instalação
-Execute os comandos abaixo no terminal para instalar na família Debian/Ubuntu.
+Execute o comando abaixo no terminal para instalar o SQLite na família Debian/Ubuntu.
 
 ```sh
 # apt-get install sqlite3 libsqlite3-dev
