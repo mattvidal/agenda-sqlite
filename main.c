@@ -3,7 +3,7 @@
 
 void main(void)
 {
-    setlocale(LC_ALL, "");
+    setlocale(LC_ALL, "portuguese");
 
     //declarações de variáveis
     sqlite3 *db;

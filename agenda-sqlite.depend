@@ -1,14 +1,14 @@
 # depslib dependency file v1.0
-1525035688 source:/home/matheus/Documentos/Projetos/Code Blocks/agenda-sqlite/main.c
+1530994536 source:/home/matheus/Documentos/Projetos/Code Blocks/agenda-sqlite/main.c
 	"interface.h"
 	"func_bd.h"
 
-1525038856 /home/matheus/Documentos/Projetos/Code Blocks/agenda-sqlite/sistema_operacional.h
+1526848821 /home/matheus/Documentos/Projetos/Code Blocks/agenda-sqlite/sistema_operacional.h
 
-1525035461 source:/home/matheus/Documentos/Projetos/Code Blocks/agenda-sqlite/interface.c
+1526848821 source:/home/matheus/Documentos/Projetos/Code Blocks/agenda-sqlite/interface.c
 	"interface.h"
 
-1524949911 /home/matheus/Documentos/Projetos/Code Blocks/agenda-sqlite/interface.h
+1526848821 /home/matheus/Documentos/Projetos/Code Blocks/agenda-sqlite/interface.h
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
@@ -22,10 +22,33 @@
 	"sistema_operacional.h"
 	"interface.h"
 
-1525038762 source:/home/matheus/Documentos/Projetos/Code Blocks/agenda-sqlite/func_bd.c
+1530995628 source:/home/matheus/Documentos/Projetos/Code Blocks/agenda-sqlite/func_bd.c
 	"func_bd.h"
 
-1525035938 /home/matheus/Documentos/Projetos/Code Blocks/agenda-sqlite/func_bd.h
+1526848821 /home/matheus/Documentos/Projetos/Code Blocks/agenda-sqlite/func_bd.h
 	"interface.h"
 	<sqlite3.h>
+
+1530994813 source:/home/matheus/Documentos/Projetos/agenda-sqlite/func_bd.c
+	"func_bd.h"
+
+1526848821 /home/matheus/Documentos/Projetos/agenda-sqlite/func_bd.h
+	"interface.h"
+	<sqlite3.h>
+
+1526848821 /home/matheus/Documentos/Projetos/agenda-sqlite/interface.h
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<string.h>
+	"sistema_operacional.h"
+
+1526848821 /home/matheus/Documentos/Projetos/agenda-sqlite/sistema_operacional.h
+
+1526848821 source:/home/matheus/Documentos/Projetos/agenda-sqlite/interface.c
+	"interface.h"
+
+1530994536 source:/home/matheus/Documentos/Projetos/agenda-sqlite/main.c
+	"interface.h"
+	"func_bd.h"
 

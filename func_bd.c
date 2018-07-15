@@ -57,19 +57,14 @@ void criaTabelas(int rc, sqlite3 *db, sqlite3_stmt *stmt)
 int callback(void *arg, int argc, char **argv, char **colName) {                                /* 1 */
 
     int i;
-    char controle[1] = "0";
+    //char controle[1] = "0";
 
-    if(strcmp(argv, controle))
+    for(i=0; i<argc; i++)
     {
-        printf("Não há contatos na agenda!\n");
+        printf("%s = %s\t", colName[i], argv[i] ? : "NULL");
     }
-    else
-    {
-        for(i=0; i<argc; i++)
-        {
-            printf("%s = %s\t", colName[i], argv[i] ?  : "NULL");
-        }
-    }
+
+
 
     printf("\n");
     return 0;
@@ -80,17 +75,17 @@ void listarContatos(sqlite3 *db)
     limpatela();
     header();
 
-    /*if (sqlite3_exec(db, "SELECT * FROM contatos ORDER BY nome;", callback, NULL, &errmsg) != SQLITE_OK)
-    {
-        controlaErros(db);
-        sqlite3_free(errmsg);
-    }*/
-
-    if (sqlite3_exec(db, "SELECT count(id_contato) FROM contatos;", callback, NULL, &errmsg) != SQLITE_OK)
+    if (sqlite3_exec(db, "SELECT * FROM contatos ORDER BY nome;", callback, NULL, &errmsg) != SQLITE_OK)
     {
         controlaErros(db);
         sqlite3_free(errmsg);
     }
+
+    /*if (sqlite3_exec(db, "SELECT count(id_contato) FROM contatos;", callback, NULL, &errmsg) != SQLITE_OK)
+    {
+        controlaErros(db);
+        sqlite3_free(errmsg);
+    }*/
 
     limpabuffer();
     pausa();
