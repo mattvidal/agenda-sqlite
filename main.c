@@ -11,6 +11,7 @@ void main(void)
     sqlite3_stmt *stmt;
     int op;
 
+
     rc = sqlite3_open("agenda.db", &db);
 
     erroBancoDeDados(rc, db);
@@ -40,7 +41,7 @@ void main(void)
             break;
 
             case 5 :
-                //limparAgenda();
+                limparAgenda(rc, db, stmt);
             break;
 
             case 6 :

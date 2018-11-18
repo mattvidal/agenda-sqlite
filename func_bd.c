@@ -105,3 +105,43 @@ void inserirContato(sqlite3 *db)
     sqlite3_finalize(stmt);
 
 }
+
+void limparAgenda(int rc, sqlite3 *db, sqlite3_stmt *stmt)
+{
+    int cont = 0;
+
+    for(cont = 0; cont < 4; cont++)
+    {
+        switch (cont)
+        {
+            case 0 :
+                sqlite3_prepare_v2(db, "DELETE FROM contatos;", -1, &stmt, NULL);
+            break;
+
+            case 1 :
+                sqlite3_prepare_v2(db, "DELETE FROM telefones;", -1, &stmt, NULL);
+            break;
+
+            case 2 :
+                sqlite3_prepare_v2(db, "DELETE FROM celulares;", -1, &stmt, NULL);
+            break;
+
+            case 3 :
+                sqlite3_prepare_v2(db, "DELETE FROM emails;", -1, &stmt, NULL);
+            break;
+
+        }
+
+        rc = sqlite3_step(stmt);
+
+        if (rc != SQLITE_DONE)
+        {
+            printf("Erro ao inserir dados: %s\n", sqlite3_errmsg(db));
+        }
+
+        sqlite3_finalize(stmt);
+    }
+
+    limpatela();
+}
+
