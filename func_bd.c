@@ -56,7 +56,7 @@ void criaTabelas(int rc, sqlite3 *db, sqlite3_stmt *stmt)
 
 int callback(void *arg, int argc, char **argv, char **colName) {                                /* 1 */
 
-    int i;;
+    int i;
     //char controle[1] = "0";
 
     for(i=0; i<argc; i++)
